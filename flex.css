@@ -1,0 +1,50 @@
+.container-1 div, .container-2 div, .container-3 div {
+  border: 1px #ccc solid; 
+  padding: 10px;
+}
+.box-1 {
+  flex: 2; /* takes 2 times as much space as other boxes */
+  order: 2; /* order of display */
+}
+.box-2 {
+  flex: 1;
+  order: 1;
+}
+.box-3 {
+  flex: 1;
+  order: 3;
+}
+.container-2-box {
+  flex-basis: 27%;
+}
+.container-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container-3-box {
+  flex-basis: 12%;
+}
+
+@media only screen and (min-width: 480px) {
+  .container-1 {
+    display: flex;
+    /* 
+    align-items: center; 
+    align-items: flex-start;
+    align-items: flex-end;
+
+    flex-direction: column; --> to make items look like blocks on top of one another
+    */
+  }
+  .container-2 {
+    display: flex;
+    justify-content: space-between;
+    /*
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-around; --> this will add a left & right margin to the first & last boxes
+    */
+  } 
+}
